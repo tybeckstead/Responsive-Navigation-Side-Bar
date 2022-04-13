@@ -1,0 +1,529 @@
+/* ^ Settings  */
+/* @ Setting - To All Element in The HTML Document */
+html, * {
+    box-sizing: border-box;
+    padding: 0;
+    -webkit-padding: 0;
+    -moz-padding: 0;
+    -ms-padding: 0;
+    -o-padding: 0;
+    margin: 0;
+    -webkit-margin: 0;
+    -moz-margin: 0;
+    -ms-margin: 0;
+    -o-margin: 0;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 13px;
+    scroll-behavior: smooth;
+}
+/* @ General Styling */
+.po-absolute {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.display-none {
+    display: none;
+}
+.z-top {
+    z-index: 99999999999999999;
+}
+.po-fixed {
+    position: fixed;
+}
+.po-relative {
+    position: relative;
+}
+.full-width {
+    width: 100%;
+}
+.full-height {
+    height: 100%;
+}
+/* @ Flexbox - Two Element Container */
+.flexbox-two-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/* ^  Header */
+/* @ Header - Header Parent Container */
+#header_container {
+    width: 100%; 
+    display: flex;
+    justify-content: flex-start;
+    z-index: 9999;
+    background: #1f1f1f;
+}
+/* @ Header - Hamburger Navigation */
+#ham-nav {
+    display: none;
+    position: relative;
+}
+/* @ Header - Main Logo */
+#header_logo {
+    width: auto;
+    height: 5rem;
+    padding: 0.5rem;
+    -webkit-padding: 0.5rem;
+    -moz-padding: 0.5rem;
+    -ms-padding: 0.5rem;
+    -o-padding: 0.5rem;
+}
+/* @ Header - Footer Hamburger Menu */
+#logo-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+}
+/* @ Header - Main Navigation */
+#nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+    min-width: 45%;
+    margin-left: auto;
+}
+/* @ Header - Navigation Links/Items */
+.nav_styles {
+    margin: 1rem 0;
+    font-size: 1rem;
+    padding: 0.4rem 1.5rem;
+    -webkit-padding: 0.4rem 1.5rem;
+    -moz-padding: 0.4rem 1.5rem;
+    -ms-padding: 0.4rem 1.5rem;
+    -o-padding: 0.4rem 1.5rem;
+    -webkit-margin: 1rem 0;
+    -moz-margin: 1rem 0;
+    -ms-margin: 1rem 0;
+    -o-margin: 1rem 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+}
+/* @ Header - Navigation Links/Items Hover */
+.nav_styles:hover {
+    text-decoration: underline;
+    color: rgb(69, 255, 2);
+}
+/* ^ FOOTER */
+/* @ Footer - Parent Footer Wrapper Container */
+#footer-wrapper {
+    min-height: 35vh;
+    background-color: #1f1f1f;
+}
+/* @ Footer - Footer Grid Container */
+#footer-grid  {
+    padding-top: 1.6rem;
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr 1fr 15%;
+    grid-template-rows: 1fr;
+    grid-template-areas:    ". item-1 item-2 item-3 item-4 .";
+}
+/* @ Footer - Footer Item Containers Basic Styling*/
+.footer-items {
+    padding: 0.3rem;
+    -webkit-padding: 0.3rem;
+    -moz-padding: 0.3rem;
+    -ms-padding: 0.3rem;
+    -o-padding: 0.3rem;
+    margin: 0.1rem;
+    -webkit-margin: 0.1rem;
+    -moz-margin: 0.1rem;
+    -ms-margin: 0.1rem;
+    -o-margin: 0.1rem;
+}
+/* @ Footer - Footer Item Box 1 */
+#footer-item-1 {
+    grid-area: item-1;
+    grid-row: 1;
+    grid-column: 2;
+} 
+/* @ Footer - Footer Item Box 2 */
+#footer-item-2 {
+    grid-area: item-2;
+    grid-row: 1;
+    grid-column: 3;
+}  
+/* @ Footer - Footer Item Box 3 */
+#footer-item-3 {
+    grid-area: item-3;
+    grid-row: 1;
+    grid-column: 4;
+}
+/* @ Footer - Footer Item Box 4 */
+#footer-item-4 {
+    grid-area: item-4;
+    grid-row: 1;
+    grid-column: 5;
+} 
+/* @ Footer - Item Title */
+.footer-item-title {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    -webkit-padding: 1rem 0;
+    -moz-padding: 1rem 0;
+    -ms-padding: 1rem 0;
+    -o-padding: 1rem 0;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+/* @ Footer - Parent UL List */
+.list-ul-footer {
+    list-style-type: none;
+}
+/* @ Footer - Item List */
+.list-item-footer, .list-item-footer > a {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    -webkit-padding: 0.5rem 0;
+    -moz-padding: 0.5rem 0;
+    -ms-padding: 0.5rem 0;
+    -o-padding: 0.5rem 0;
+    font-weight: normal;
+    text-transform: capitalize !important;
+    text-decoration: none;
+    color: rgb(135, 135, 135);
+}
+/* @ Footer - Link A-Tage Hover */
+.list-item-footer > a:hover {
+    text-decoration: none;
+    color: rgb(69, 255, 2);
+}
+/* @ Footer - Bottom Container */
+#company-footer {
+    margin-top: 1.5rem;
+    padding: 1rem 3rem;
+    -webkit-padding: 1rem 3rem;
+    -moz-padding: 1rem 3rem;
+    -ms-padding: 1rem 3rem;
+    -o-padding: 1rem 3rem;
+    background-color: #161616;
+    height: 100%;
+}
+/* @ Footer - Bottom Text Information */
+.info-footer-bottom-text, .info-footer-bottom-text > a {
+    font-size: 0.8rem;
+    color: white;
+}
+/* @ Footer - Bottom text A-tag */
+.info-footer-bottom-text > a:hover {
+    text-decoration: none;
+    color: rgb(69, 255, 2);
+}
+/* ^ SIDE BAR  */
+/* @ Side Bar - Inactive Container */
+#inactive-side {
+    display: none;
+    width: 40%;
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+/* @ Side Bar - Main Side Bar */
+#side-bar {
+    display: none;
+    background: #161616;
+    width: 60%;
+    margin-left: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    padding: 0;
+    -webkit-padding: 0;
+    -moz-padding: 0;
+    -ms-padding: 0;
+    -o-padding: 0;
+    box-shadow: -6px 0px 1rem rgba(0, 0, 0, 0.242);
+    -webkit-box-shadow: -6px 0px 1rem rgba(0, 0, 0, 0.242);
+    -moz-box-shadow: -6px 0px 1rem rgba(0, 0, 0, 0.242);
+    -ms-box-shadow: -6px 0px 1rem rgba(0, 0, 0, 0.242);
+    -o-box-shadow: -6px 0px 1rem rgba(0, 0, 0, 0.242);
+    border-left: solid 0.2rem rgb(135, 135, 135);
+}
+/* @ Side Bar - Grid Child Container */
+#sidebar-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh minmax(85vh, auto) 5vh;
+}
+/* @ Side Bar - Top Parent Flexbox Container (Company Name, Close Icon)*/
+.sidebar-top-container {
+    padding: 1rem 1.4rem;
+    -webkit-padding: 1rem 1.4rem;
+    -moz-padding: 1rem 1.4rem;
+    -ms-padding: 1rem 1.4rem;
+    -o-padding: 1rem 1.4rem;
+    grid-column: 1;
+    grid-row: 1;
+}
+/* @ Side Bar - Company Name/Logo Container */
+#other_logo_container {
+    margin: 0 auto 0 0;
+    padding: 0;
+    -webkit-padding: 0;
+    -moz-padding: 0;
+    -ms-padding: 0;
+    -o-padding: 0;
+    -webkit-margin: 0 auto 0 0;
+    -moz-margin: 0 auto 0 0;
+    -ms-margin: 0 auto 0 0;
+    -o-margin: 0 auto 0 0;
+}
+/* @ Side Bar - Close Side Bar Container */
+#close_container {
+    display: block;
+    margin: 0 0 0 auto;
+    padding: 0;
+    -webkit-padding: 0;
+    -moz-padding: 0;
+    -ms-padding: 0;
+    -o-padding: 0;
+    -webkit-margin: 0 0 0 auto;
+    -moz-margin: 0 0 0 auto;
+    -ms-margin: 0 0 0 auto;
+    -o-margin: 0 0 0 auto;
+}
+/* @ Side Bar - Company Name Text Styling */
+#company-name {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: 'Open Sans',sans-serif;
+    padding: 0;
+    -webkit-padding: 0;
+    -moz-padding: 0;
+    -ms-padding: 0;
+    -o-padding: 0;
+    margin: 0;
+    -webkit-margin: 0;
+    -moz-margin: 0;
+    -ms-margin: 0;
+    -o-margin: 0;
+    color: white;
+}
+/* @ Side Bar - Close Side Bar Icon */
+#close-nav {
+    width: 3rem;
+    height: auto;
+    cursor: pointer;
+    margin-top: 0.2rem;
+}
+/* @ Side Bar - Link Item Container */
+.sidebar-link-container {
+    padding: 0;
+    -webkit-padding: 0;
+    -moz-padding: 0;
+    -ms-padding: 0;
+    -o-padding: 0;
+    grid-column: 1;
+    grid-row: 2;
+}
+/* @ Side Bar - Sidebar Link Container */
+.sidebar-link {
+    color: #fff;
+    margin: 0 0;
+    -webkit-margin: 0 0;
+    -moz-margin: 0 0;
+    -ms-margin: 0 0;
+    -o-margin: 0 0;
+    border-top: rgb(135, 135, 135) solid 0.1rem;
+    border-bottom: rgb(135, 135, 135) solid 0.1rem;
+    padding: 1.9rem 1.5rem;
+    -webkit-padding: 1.9rem 1.5rem;
+    -moz-padding: 1.9rem 1.5rem;
+    -ms-padding: 1.9rem 1.5rem;
+    -o-padding: 1.9rem 1.5rem;
+    cursor: pointer;
+    background-color: #1f1f1f;
+}
+/* @ Side Bar - Side Link Container Last Child */
+.sidebar-link:last-child {
+    border-bottom: rgb(135, 135, 135) solid 0.2rem;
+}
+/* @ Side Bar - Side Link Container Hover Animation */
+.sidebar-link:hover {
+    background: rgb(55, 55, 55);
+    transition: background-color 0.20s ease-in 75ms;
+    -webkit-transition: background-color 0.20s ease-in 75ms;
+    -moz-transition: background-color 0.20s ease-in 75ms;
+    -ms-transition: background-color 0.20s ease-in 75ms;
+    -o-transition: background-color 0.20s ease-in 75ms;
+}
+/* @ Side Bar - Link Item Text Styling */
+.link-item {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.9rem;
+}
+/* @ Side Bar - Bottom Information Container */
+#sidebar-footer {
+    background-color: #1f1f1f;
+    grid-column: 1;
+    grid-row: 3;
+    position: relative;
+    padding: 1rem;
+    -webkit-padding: 1rem;
+    -moz-padding: 1rem;
+    -ms-padding: 1rem;
+    -o-padding: 1rem;
+}
+/* @ Side Bar - Bottom Information Text Styling */
+.info-sidebar-bottom-text, .info-sidebar-bottom-text > a {
+    font-size: 0.8rem;
+    color: white;
+}
+/* @ Side Bar - Bottom text A-Tag */
+.info-sidebar-bottom-text > a:hover {
+    text-decoration: none;
+    color: rgb(69, 255, 2);
+}
+/* ^ HAMBURGER NAVIGATION */
+/* @ Hamburger Navigation - Checkbox Input Styling  */
+.checkbox {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 13px; 
+    line-height:18px;
+}
+/* @ Hamburger Navigation - Checkbox Input */
+/* ! Hide Checkbox */
+input[type=checkbox] {
+    display:none;   
+}
+/* @ Hamburger Navigation - For Label to Checkbox input */
+/* ! Replace Checkbox Input with a Label for the checkbox */
+.checkbox {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    background: url("./img/ham_w.png") no-repeat;
+    background-size: cover;
+    color: #f3f3f3;
+    text-align: center;
+}
+/* ^ Section Container */
+/* @ Section - General Section Styling */
+.section {
+    height: 100vh;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    z-index: 99;
+    -webkit-padding: 1rem 1.5rem;
+    -moz-padding: 1rem 1.5rem;
+    -ms-padding: 1rem 1.5rem;
+    -o-padding: 1rem 1.5rem;
+    background-color: rgb(255, 255, 255);
+}
+/* ^ Media Queries */
+/* @ Media Query - Tablet / Large Mobile Devices (768px and Below) */
+@media only screen and (max-width: 768px)  {
+    /* & HEADER */
+    /* @ Header (768px and Below) - Header Container */
+    #header_container {
+        width: 100%; 
+        display: flex;
+        justify-content: flex-start;
+        z-index: 9999;
+        background: #1f1f1f;
+    }
+    /* @ Header (768px and Below) - Main Navigation */
+    #nav-menu {
+        display: none;
+    }
+    /* @ Header (768px and Below) - Header Logo */
+    #header_logo {
+        width: auto;
+        height: 5rem;
+        background-color: none;
+    }
+    /*@ Header (768px and Below) -  Hamburger Navigation */
+    #ham-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 2rem;
+        -webkit-padding: 0 2rem;
+        -moz-padding: 0 2rem;
+        -ms-padding: 0 2rem;
+        -o-padding: 0 2rem;
+        background-color: none;
+        margin-left: auto;
+    }
+    /* & FOOTER */
+    /* @ Footer (768px and Below) - Footer Wrapper Container */
+    #footer-wrapper {
+        height: auto;
+    }
+    /* @ Footer (768px and Below) - Footer Container Item 4 */
+    .footer-items {
+        padding: 1rem 2rem;
+        -webkit-padding: 1rem 2rem;
+        -moz-padding: 1rem 2rem;
+        -ms-padding: 1rem 2rem;
+        -o-padding: 1rem 2rem;
+    }
+    /* @ Footer (768px and Below) - Footer Container Item 4 */
+    #footer-grid  {
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    /* @ Footer (768px and Below) - Footer Container Item 4 */
+    #footer-item-1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    /* @ Footer (768px and Below) - Footer Container Item 4 */
+    #footer-item-2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    /* @ Footer (768px and Below) - Footer Container Item 4 */
+    #footer-item-3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    /* @ Footer (768px and Below) - Footer Container Item 4 */
+    #footer-item-4 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    /* @ Footer (768px and Below) - Footer - Bottom Container */
+    #company-footer {
+        margin-top: 1.5rem;
+        padding: 1rem 3rem;
+        -webkit-padding: 1rem 3rem;
+        -moz-padding: 1rem 3rem;
+        -ms-padding: 1rem 3rem;
+        -o-padding: 1rem 3rem;
+        background-color: #161616;
+        height: 100%;
+    }
+}
+/* @ Media Query - Small Mobile Devices (600px and Below) */
+@media only screen and (max-width: 600px)  {
+    #side-bar {
+        width: 75%;
+    }
+    #inactive-side {
+        width: 25%;
+    }
+}
+/* @ Media Query -  Smallest Mobile Devices (400px and Below) */
+@media only screen and (max-width: 400px)  {
+    #side-bar {
+        width: 93%;
+    }
+    #inactive-side {
+        width: 7%;
+    }
+}
